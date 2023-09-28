@@ -1,0 +1,7 @@
+ha-cam-tag:
+  homeassistant:
+    uri: https://homeassistant.local/api/
+    auth-token: "secret-auth-token"
+  camera:
+    device-id: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    stream: "rtsp://xx.xx.xx.xx/xxxxxxxxxxxxxxxx"
