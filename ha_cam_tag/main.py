@@ -16,7 +16,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 DEBOUNCE_PERIOD = timedelta(seconds=5)
-TAG_ID_PATTERN = re.compile('https://www.home-assistant.io/tag/([0-9a-f-]+)')
+TAG_ID_PATTERN = re.compile('https://www.home-assistant.io/tag/([0-9a-fA-F-]+)')
 
 def main():
     parser = argparse.ArgumentParser()
