@@ -1,9 +1,0 @@
-[Unit]
-Description=ha-cam-tag
-
-[Service]
-ExecStart=ha_cam_tag /etc/ha-cam-tag/config.yml
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target

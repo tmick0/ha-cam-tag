@@ -1,13 +1,12 @@
-# ha-cam-tag
+# Streaming Camera Tag Detection for Home Assistant
 
-This is a simple program to detect QR codes containing Home Assistant tags in an RTSP stream and send `tag_scanned` events to Home Assistant.
+This is a simple Home Assistant add-on to detect QR codes containing tag URLs in an RTSP stream and generate `tag_scanned` events from them.
 
-Fill in the config file with the following information:
-- `uri`: URI of the Home Assistant API, e.g. http://homeassistant.local:8123/api/
-- `auth-token`: A long-lived access token for Home Assistant
-- `device-id`: Device ID to set for the origin of the events, e.g. the ID of the camera device
-- `stream`: URI of the RTSP stream to consume
+After installation, set up the following configuration for the add-on:
 
-For more details on setting up the Home Assistant API, see https://developers.home-assistant.io/docs/api/rest/
+- `tag_event_device_id`: Device ID to set for the origin of the events, e.g. the ID of the camera device
+- `camera_rtsp_stream`: URI of the RTSP stream to consume
+
+Then, you can start it up.
 
 More info on this project at https://lo.calho.st/posts/homeassistant-qr-code-detection/
